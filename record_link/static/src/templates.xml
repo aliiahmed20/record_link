@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="record_link.ListRenderer.RecordRow" t-inherit="web.ListRenderer.RecordRow" t-inherit-mode="extension">
+        <xpath expr="//tr[hasclass('o_data_row')]" position="attributes">
+            <attribute name="t-att-data-record-href">getRecordUrl(record)</attribute>
+        </xpath>
+    </t>
+
+    <t t-name="record_link.KanbanRecord" t-inherit="web.KanbanRecord" t-inherit-mode="extension">
+        <xpath expr="//article" position="attributes">
+            <attribute name="t-att-data-record-href">getRecordUrl()</attribute>
+        </xpath>
+    </t>
+
+</templates>

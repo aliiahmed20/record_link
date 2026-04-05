@@ -1,0 +1,28 @@
+// Custom context menu for "Open in new tab" on list rows and kanban cards.
+
+.o_record_context_menu {
+    position: fixed;
+    z-index: 10000;
+    background: var(--o-color-bg, #fff);
+    border: 1px solid var(--o-color-border, #dee2e6);
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 4px 0;
+    min-width: 180px;
+    font-size: 13px;
+
+    .o_record_context_menu_item {
+        display: block;
+        padding: 6px 16px;
+        color: var(--o-color-text, #212529);
+        text-decoration: none;
+        white-space: nowrap;
+        cursor: pointer;
+
+        &:hover {
+            background: var(--o-color-bg-hover, #f8f9fa);
+            color: var(--o-color-text, #212529);
+            text-decoration: none;
+        }
+    }
+}
